@@ -2,7 +2,6 @@
 
 Complete the function `stars_in_galaxy` in `universe.py` to return the correct number of stars in a galaxy.
 
-✅ Example:
 
 ```python
 >>> stars_in_galaxy("Milky Way")
