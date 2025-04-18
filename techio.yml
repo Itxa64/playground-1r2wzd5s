@@ -3,5 +3,5 @@ projects:
     root: /
     runner: python:3
     lessons :
-      - title: "Mon premier exercice Python"
-        path: "welcome.md"
+        - title: "Mon premier exercice Python"
+          path: "welcome.md"
