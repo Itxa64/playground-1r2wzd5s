@@ -6,7 +6,7 @@ plan:
 
 files:
   - statement.md
-  - test.py
+  #- test.py
 
 sandbox:
   runner: python3
