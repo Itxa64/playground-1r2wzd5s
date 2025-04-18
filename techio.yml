@@ -4,4 +4,4 @@ projects:
     runner: python:3
     lessons :
       - title: "Mon premier exercice Python"
-      path: "welcome.md"
+        path: "welcome.md"
