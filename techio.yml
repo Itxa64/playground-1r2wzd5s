@@ -2,3 +2,6 @@ projects:
   python:
     root: /
     runner: python:3
+    chapters:
+      - title: "Introduction to Python"
+        path: welcome.md
