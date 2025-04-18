@@ -49,7 +49,7 @@ while len(key) < len(word):
 key = key[:len(word)] # Trim the key to the length of the word. We are using a "splice" here.
 
 # Define a function that encodes a word using a keyword and returns the result.
-def Vigenère(word, key):
+def Vigenere(word, key):
     encoded_word = ""
     for i, char in enumerate(word):
         key_char = key[i % len(key)]  # Use modulo to repeat the key if it's shorter than the word
@@ -57,7 +57,7 @@ def Vigenère(word, key):
         encoded_word += encoded_char
     return encoded_word
 
-print(Vigenère(word, key))
+print(Vigenere(word, key))
 ```
 The result of this code will be: "ALCPS"
 
