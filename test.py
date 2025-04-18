@@ -2,13 +2,12 @@
 def Caesar(word, shift):
     encoded = ""
     for char in word:
-        # The integer '97' is the ordinal value in Unicode Point Code that represents the character "a".
-        encoded += chr(((ord(char) - 97 + shift) % 26) + 97)
-    # Check the case of the word, and match the case for the encoding.
-    if word.isupper():
-        return encoded.upper()
-    else:
-        return encoded
+        if char.isalpha():
+            base = 65 if char.isupper() else 97
+            encoded += chr(((ord(char) - base + shift) % 26) + base)
+        else:
+            encoded += char  # keep non-letter characters unchanged
+    return encoded
 
 def Vigenere(word, key):
     key = (key * ((len(word) // len(key)) + 1))[:len(word)]
@@ -20,5 +19,5 @@ def Vigenere(word, key):
     return encoded_word
 
 # Tests
-#print("Caesar('HELLO', 3) =>", Caesar("HELLO", 3))  # EBIIL selon ton code, mais en vrai ce serait KHOOR
-#print("Vigenere('HELLO', 'THREE') =>", Vigenere("HELLO", "THREE"))  # ALCPS
+print("Caesar('HELLO', 3) =>", Caesar("HELLO", 3))  # EBIIL selon ton code, mais en vrai ce serait KHOOR
+print("Vigenere('HELLO', 'THREE') =>", Vigenere("HELLO", "THREE"))  # ALCPS
