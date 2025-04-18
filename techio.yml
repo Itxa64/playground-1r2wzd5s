@@ -2,7 +2,7 @@ title: 'PYTHON: Caesar and Vigenère Ciphers'
 plan:
 - title: Python Snippet
   statement: statement.md
-  file: test.py
+  #file: test.py
 
 files:
   - statement.md
