@@ -20,5 +20,5 @@ def Vigenere(word, key):
     return encoded_word
 
 # Tests
-print("Caesar('HELLO', 3) =>", Caesar("HELLO", 3))  # EBIIL selon ton code, mais en vrai ce serait KHOOR
-print("Vigenere('HELLO', 'THREE') =>", Vigenere("HELLO", "THREE"))  # ALCPS
+#print("Caesar('HELLO', 3) =>", Caesar("HELLO", 3))  # EBIIL selon ton code, mais en vrai ce serait KHOOR
+#print("Vigenere('HELLO', 'THREE') =>", Vigenere("HELLO", "THREE"))  # ALCPS
