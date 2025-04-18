@@ -1,4 +1,4 @@
 projects:
   python:
-    root: /python-project
+    root: /
     runner: python:3
