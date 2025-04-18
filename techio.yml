@@ -3,3 +3,11 @@ plan:
 - title: Python Snippet
   statement: statement.md
   file: test.py
+
+files:
+  - statement.md
+  - test.py
+
+sandbox:
+  runner: python3
+  entrypoint: test.py
