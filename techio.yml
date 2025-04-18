@@ -1,7 +1,4 @@
-projects:
-  python:
-    root: /
-    runner: python:3
-    lessons :
-        - title: "Mon premier exercice Python"
-          path: "welcome.md"
+title: 'PYTHON: Caesar and Vigenère Ciphers'
+plan:
+- title: Python Snippet
+  statement: statement.md
