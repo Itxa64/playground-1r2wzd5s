@@ -10,4 +10,4 @@ files:
 
 sandbox:
   runner: python3
-  entrypoint: test.py
+  #entrypoint: test.py
