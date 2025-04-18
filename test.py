@@ -1,8 +1,14 @@
+# Create a function to encode input and return the result:
 def Caesar(word, shift):
     encoded = ""
     for char in word:
-        encoded += chr(((ord(char.lower()) - 97 + shift) % 26) + 97)
-    return encoded.upper() if word.isupper() else encoded
+        # The integer '97' is the ordinal value in Unicode Point Code that represents the character "a".
+        encoded += chr(((ord(char) - 97 + shift) % 26) + 97)
+    # Check the case of the word, and match the case for the encoding.
+    if word.isupper():
+        return encoded.upper()
+    else:
+        return encoded
 
 def Vigenere(word, key):
     key = (key * ((len(word) // len(key)) + 1))[:len(word)]
