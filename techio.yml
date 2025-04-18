@@ -1,7 +1,7 @@
 projects:
-  - title: "Mon premier exercice Python"
+  python:
     root: "/"
-    lessons:
-      - title: "Introduction"
-        path: "welcome.md"
     runner: python:3
+    chapters:
+      - title: "Mon premier exercice Python"
+        path: "welcome.md"
