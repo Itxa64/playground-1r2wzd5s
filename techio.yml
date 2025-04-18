@@ -2,12 +2,12 @@ title: 'PYTHON: Caesar and Vigenère Ciphers'
 plan:
 - title: Python Snippet
   statement: statement.md
-  #file: test.py
+  file: test.py
 
 files:
   - statement.md
-  #- test.py
+  - test.py
 
 sandbox:
   runner: python3
-  #entrypoint: test.py
+  entrypoint: test.py
